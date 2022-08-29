@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: clairemanthey/adventure_blog
 
 media_folder: content/assets
 public_folder: ../assets
@@ -10,9 +10,11 @@ collections:
     label: Blog
     folder: content/blog
     create: true
+    slug: "{{year}}-{{month}}-{{day}} -{{slug}}"
+    editor:
+      preview: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: description, label: Description }
-      - { name: body, label: Body, widget: markdown }
+      - { name: "title", label: "Title" }
+      - { name: "date", label: "Publish Date", widget: "datetime" }
+      - { name: "description", label: "Description" }
+      - { name: "body", label: "Body", widget: "markdown" }

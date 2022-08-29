@@ -3,15 +3,14 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { useFlexSearch } from "react-use-flexsearch"
 import * as queryString from "query-string"
-
+import "../app.css"
 import { rhythm } from "../utils/typography"
 
 const SearchBar = styled.div`
   display: flex;
   border: 1px solid #dfe1e5;
   border-radius: 10px;
-  margin: 0 auto ${rhythm(1)};
-  width: 100%;
+  margin: 0 150px;
   height: 3rem;
   background: #fdfdfd;
 
@@ -27,8 +26,8 @@ const SearchBar = styled.div`
     display: flex;
     flex: 100%;
     height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif;
+    width: auto;
+    font-family: system-ui, -apple-system, "Fira Sans", sans-serif;
     font-size: 16px;
     background-color: transparent;
     border: none;
@@ -51,7 +50,7 @@ const SearchedPosts = ({ results }) =>
       const slug = node.slug
 
       return (
-        <div key={slug}>
+        <div key={slug} className="container__posts">
           <h3
             style={{
               marginBottom: rhythm(1 / 4),
@@ -76,8 +75,9 @@ const SearchedPosts = ({ results }) =>
     </p>
   )
 
+/*Post containter */
 const AllPosts = ({ posts }) => (
-  <div style={{ margin: "20px 0 40px" }}>
+  <div style={{ margin: "20px 0 40px"}} className="container__posts">
     {posts.map(({ node }) => {
       const title = node.frontmatter.title || node.fields.slug
       return (
@@ -85,6 +85,7 @@ const AllPosts = ({ posts }) => (
           <h3
             style={{
               marginBottom: rhythm(1 / 4),
+              fontFamily: `'Fira Sans Extra Condensed', sans-serif`,
             }}
           >
             <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
@@ -95,6 +96,10 @@ const AllPosts = ({ posts }) => (
           <p
             dangerouslySetInnerHTML={{
               __html: node.frontmatter.description || node.excerpt,
+            }}
+            style={{
+              fontFamily: `'Hahmlet', serif`,
+              overflow: `Hidden`
             }}
           />
         </div>

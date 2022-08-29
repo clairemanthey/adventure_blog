@@ -1,0 +1,79 @@
+:root{
+  /* Colors */
+  --background-color: #170425;
+  --font-color: #FAEDFD;
+  
+  /* font-sizes */
+  --fs-900: 3.5rem;
+  --fs-800: 3rem;
+  --fs-700: 2.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1.25rem;
+  --fs-300: 1rem;
+  --fs-200: 0.9375rem;
+  --fs-100: 0.875rem;
+  
+  /* font-families */
+  --ff-serif: 'Hahmlet', serif;
+  --ff-sans: 'Fira Sans', sans-serif;
+  --ff-sans-cond: 'Fira Sans Extra Condensed', sans-serif;
+
+}
+
+*, ::before, ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  overflow: hidden;
+}
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+}
+
+a{
+	color: inherit;
+	box-shadow: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.link{
+	text-decoration: none;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.main{
+	background: var(--background-color);
+	color: var(--font-color);
+}
+
+.header_image{
+}
+
+.container__posts{
+  padding-inline: 150px;
+}
+
+.header-one{
+  margin-inline: 50px;
+}
+
+.para{
+  margin-inline: 50px;
+  font-family: 'Hahmlet', serif;
+  overflow: hidden;
+}
+
+.post__title{
+  font-family: `'Fira Sans Extra Condensed', sans-serif`,
+}

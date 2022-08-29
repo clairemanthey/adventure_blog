@@ -1,11 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import "../app.css"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
+import Header from "../components/Header"
+
 
 class Blog extends React.Component {
   render() {
@@ -15,19 +18,23 @@ class Blog extends React.Component {
     const localSearchBlog = data.localSearchBlog
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
-        <SearchPosts
-          posts={posts}
-          localSearchBlog={localSearchBlog}
-          navigate={navigate}
-          location={location}
-        />
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
-      </Layout>
+      <div className="main">
+            <Header />
+
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO title="All posts" />
+          <Bio />
+          <SearchPosts
+            posts={posts}
+            localSearchBlog={localSearchBlog}
+            navigate={navigate}
+            location={location}
+          />
+          <Link to="/">
+            <Button>Go Home</Button>
+          </Link>
+        </Layout>
+      </div>
     )
   }
 }

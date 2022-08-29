@@ -4,9 +4,9 @@ module.exports = {
     title: `Adventures in Web Design`,
     author: `Claire`,
     description: `A personal blog about my learning journey.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://fascinating-snickerdoodle-c69e4e.netlify.app/`,
     social: {
-      twitter: `gatsbyjs`,
+      twitter: `claire_makes`,
     },
   },
   plugins: [
@@ -130,5 +130,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    "gatsby-plugin-netlify-cms",
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      }
+    }
   ],
 }
