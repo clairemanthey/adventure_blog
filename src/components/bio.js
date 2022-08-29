@@ -8,7 +8,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import "../App.css"
+import "../app.css"
 
 
 //import { rhythm } from "../utils/typography"
