@@ -5,7 +5,7 @@ import "../app.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
-import Header from "../components/Header"
+import Header from "../components/header"
 
 
 class IndexPage extends React.Component {
