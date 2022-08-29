@@ -1,6 +1,6 @@
 import React from "react"
 import HeaderImage from "../../content/assets/header_image.png"
-import "../App.css"
+import "../app.css"
 
 function Header() {
 	return(
