@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
-import Header from "../components/Header"
+import Header from "../components/header"
 
 
 class Blog extends React.Component {
