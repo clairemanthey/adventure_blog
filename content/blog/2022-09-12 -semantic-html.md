@@ -21,4 +21,4 @@ Why use semantic elements? Especially when non-semantic elements can get the job
 
 <br>
 
-How to use semantic HTML makes the web more accessible to everyone.
+Up Next: How to use semantic HTML.
