@@ -17,7 +17,7 @@ Semantic tags have default styles in most browser’s stylesheet, called user ag
 
 <br>
 
-Why use semantic elements? Especially when non-semantic elements can get the job done. Accessibility, making websites accessible for everyone, including people with disabilities. Semantic HTML creates landmarks by giving the content roles, the tag header has the role of banner built in, so it’s equivalent to div role=“banner”. Screen readers use landmarks to help people with visual impairments navigate the page without wasting the user’s name by reading out repetitive or irrelevant information. SEO, search engines look at the content of the markup and use important keywords to influence a page’s ranking. 
+Why use semantic elements? Especially when non-semantic elements can get the job done. Accessibility, making websites accessible for everyone, including people with disabilities. Semantic HTML creates landmarks by giving the content roles, the tag header has the role of banner built in. Screen readers use landmarks to help people with visual impairments navigate the page without wasting the user’s name by reading out repetitive or irrelevant information. SEO, search engines look at the content of the markup and use important keywords to influence a page’s ranking. 
 
 <br>
 
