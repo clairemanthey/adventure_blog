@@ -1,65 +1,71 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
+import { Link, graphql } from "gatsby"
 import "../app.css"
 
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Button from "../components/button"
+import SearchPosts from "../components/searchPosts"
+import Header from "../components/header"
 
-//import { rhythm } from "../utils/typography"
 
-function Bio() {
-  return (
+class Blog extends React.Component {
+  render() {
+    const { data, navigate, location } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMdx.edges
+    const localSearchBlog = data.localSearchBlog
 
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <Container className="blog-container">
-            <p className="para blog-para">
-              A blog about learning web design written by <strong>{author}</strong>, using a framework built upon the
-              React library.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`} className="link blog-link">
-                Follow me on Twitter
-              </a>
-            </p>
-          </Container>
-        )
-      }}
-    />
-  )
+    return (
+      <div className="main">
+        <Header />
+
+        <Layout location={this.props.location} title={siteTitle}>
+          <SEO title="All posts" />
+          <Bio />
+          <SearchPosts
+            posts={posts}
+            localSearchBlog={localSearchBlog}
+            navigate={navigate}
+            location={location}
+          />
+          <Link to="/">
+            <Button>Go Home</Button>
+          </Link>
+        </Layout>
+      </div>
+    )
+  }
 }
 
-const bioQuery = graphql`
-  query BioQuery {
-    avatar: file(absolutePath: { regex: "/gatsby-icon.png/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
+export default Blog
+
+export const pageQuery = graphql`
+  query {
     site {
       siteMetadata {
-        author
-        social {
-          twitter
+        title
+      }
+    }
+    localSearchBlog {
+      index
+      store
+    }
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
         }
       }
     }
   }
-
 `
-
-const Container = styled.div`
-  display: flex;
-`
-
-export default Bio
