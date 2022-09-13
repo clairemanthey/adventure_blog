@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
 import Header from "../components/header"
+import Footer from "../components/footer"
+
 
 
 class Blog extends React.Component {
@@ -34,6 +36,7 @@ class Blog extends React.Component {
             <Button>Go Home</Button>
           </Link>
         </Layout>
+        <Footer />
       </div>
     )
   }
