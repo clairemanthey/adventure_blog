@@ -2,12 +2,16 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import "../app.css"
+import Footer from "../components/footer"
+
 
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Header from "../components/header"
+
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,15 +21,17 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <main className="main">
+              <Header />
+
         <Layout location={this.props.location} title={siteTitle}>
+          <section className="blog__section">
           <SEO
             title={post.frontmatter.title}
             description={post.frontmatter.description || post.excerpt}
           />
-          <h1>{post.frontmatter.title}</h1>
-          <p
+          <h1 className="blog__title">{post.frontmatter.title}</h1>
+          <p className="blog__date"
             style={{
-              ...scale(-1 / 5),
               display: `block`,
               marginBottom: rhythm(1),
               marginTop: rhythm(-1),
@@ -33,8 +39,9 @@ class BlogPostTemplate extends React.Component {
           >
             {post.frontmatter.date}
           </p>
-          <MDXRenderer>{post.body}</MDXRenderer>
+          <MDXRenderer >{post.body}</MDXRenderer>
           <hr
+          className="blog__body"
             style={{
               marginBottom: rhythm(1),
             }}
@@ -65,7 +72,9 @@ class BlogPostTemplate extends React.Component {
               )}
             </li>
           </ul>
+          </section>
         </Layout>
+        <Footer />
       </main>
     )
   }
