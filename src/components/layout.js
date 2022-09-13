@@ -15,13 +15,11 @@ class Layout extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-            marginLeft: `50px`,
-            marginRight:`50px`,
             fontFamily: `'Fira Sans', sans-serif`,
           }}
+          className={"main-title"}
         >
           <Link
             style={{
