@@ -65,7 +65,6 @@ ul{
 	color: var(--font-color);
 }
 
-
 .main-title{
   font-size: 3.5rem;
   font-weight: bold;
@@ -84,7 +83,6 @@ ul{
   margin: 0 auto;
   width: 75%;
   min-width: 250px;
-
 }
 
 .container__posts{
@@ -92,6 +90,9 @@ ul{
   margin-inline: 25px;
 }
 
+.header-one{
+  text-align: center;
+}
 
 .header__three{
   font-size: var(--fs-600);
