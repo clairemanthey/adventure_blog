@@ -4,6 +4,7 @@ date: 2022-10-10T21:42:58.486Z
 description: What are HTML paragraphs
 tags:
   - HTML
+  - paragraph
 ---
 A paragraph is an HTML element that is created using a p tag, they also contain a group of related content. Paragraphs have both an opening tag and closing tag with content in between the tags. They are represented as blocks of content separate from other elements.
 
