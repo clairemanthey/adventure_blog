@@ -2,6 +2,8 @@
 title: Using Semantic HTML
 date: 2022-09-19T20:03:26.509Z
 description: How to start using semantic HTML
+tags:
+  - HTML
 ---
 How to start using semantic HTML? It’s easy to wrap elements into divs or use a span tag. When designing a website take some time to plan out the content and what its purpose is on your website.Think about what each part of the content is doing and how it relates to the other content. Then use the tag with the appropriate meaning for the element.
 
