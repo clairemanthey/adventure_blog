@@ -4,6 +4,7 @@ date: 2022-09-26T21:14:32.489Z
 description: What are HTML Attributes
 tags:
   - HTML
+  - attributes
 ---
 HTML attributes are pieces of additional information for an element. That additional information can define an element’s role, change an element's default behavior to configure, or adjust the element. Some elements have required attributes, other attributes are optional and only need to be used when desired to define the element or change its default behavior. Attributes are written in name-value pairs, name=”value”.
 
