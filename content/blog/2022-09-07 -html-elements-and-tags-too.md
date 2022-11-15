@@ -4,6 +4,7 @@ date: 2022-09-07T18:36:00.155Z
 description: What HTML elements and tags are and what they do
 tags:
   - HTML
+  - tags
 ---
 **HTML Elements(and Tags too)**
 
