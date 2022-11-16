@@ -10,7 +10,6 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import "../app.css"
 
-
 //import { rhythm } from "../utils/typography"
 
 function Bio() {
