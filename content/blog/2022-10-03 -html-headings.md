@@ -2,9 +2,6 @@
 title: HTML Headings
 date: 2022-10-03T21:48:55.112Z
 description: What are headings and how to use them
-tags:
-  - HTML
-  - heading
 ---
 Headings are elements representing different sections from h1 to h6. Headings are titles or subtitles displayed on a webpage. HTML heading elements created using heading tags. There are 6 headings tags that create 6 different headings, h1 denotes the highest level or most important heading, then proceedings in descending order to h6, which is the least important heading. H1 creates the largest heading, h6 creates the smallest heading. Headings are important for highlighting important information and structuring a webpage. 
 

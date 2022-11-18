@@ -2,8 +2,6 @@
 title: Semantic HTML
 date: 2022-09-12T20:29:00.000Z
 description: What semantic HTML is.
-tags:
-  - HTML
 ---
 HTML semantic elements are HTML elements with meaning by defining what the content is, how the content is supposed to behave and have specific attributes for their content. It uses tags that convey meaning as well as define the presentation. A div tag defines a section in an HTML document and can be used as a container. However a div tag doesn’t define what the content of the container is. Semantic tags such as nav, section, and article create a section and container in an HTML but they also convey meaning, defining what the content is, such as navigation, and how the element is supposed to behave on the webpage. 
 
