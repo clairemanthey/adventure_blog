@@ -1,36 +1,69 @@
+:root{
+  /* Colors */
+  --background-color: #170425;
+  --font-color: #FAEDFD;
+  --background-footer: #E0E4F5;
+  
+  /* font-sizes */
+  --fs-900: 3.5rem;
+  --fs-800: 3rem;
+  --fs-700: 2.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1.25rem;
+  --fs-300: 1rem;
+  --fs-200: 0.9375rem;
+  --fs-100: 0.875rem;
+  
+  /* font-families */
+  --ff-serif: 'Hahmlet', serif;
+  --ff-sans: 'Fira Sans', sans-serif;
+  --ff-sans-cond: 'Fira Sans Extra Condensed', sans-serif;
+
+}
+
 ul.tags {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-end: 0px;
+  cursor: pointer;
 }
+
 .tags {
-list-style: none;
-padding-left: 0;
-display: inline-block;
+  list-style: none;
+  padding-left: 0;
+  display: inline-block;
+
 }
+
 .tags li {
-padding: 0;
-margin: 0;
-display: inline-block;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
+
 .tags .tag {
-  background: rgba(0,0,0,.05);
-  color: rgba(0,0,0,.6);
+  background: var(--font-color);
+  color: var(--background-color);
   border-radius: 3px;
   padding: 5px 10px;
   display: inline-block;
   margin: 0 10px 10px 0;
+  border: 2px solid var(--background-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: var(--ff-sans-cond);
+
 }
 .tag:hover {
   transition: all 0.2s;
-  background-color: crimson;
-  color: white;
+  background: var(--background-color);
+  color: var(--font-color);
+  border: 2px solid var(--font-color);
 }
-.tag:hover::after {
-  border-left-color: crimson;
-}
+
 .tags a {
  text-decoration: none;
 }
