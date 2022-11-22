@@ -18,3 +18,4 @@ collections:
       - { name: "date", label: "Publish Date", widget: "datetime" }
       - { name: "description", label: "Description" }
       - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "tags", label: "Tags", widget: "tags", separator: ", ", required: false}
