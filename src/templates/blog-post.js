@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import "../app.css"
 import Footer from "../components/footer"
+import TagPreview from "../components/tagWidget/TagPreview"
 
 
 
@@ -18,6 +19,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const tags = post.frontmatter.tags || []
 
     return (
       <main className="main">
@@ -46,6 +48,7 @@ class BlogPostTemplate extends React.Component {
               marginBottom: rhythm(1),
             }}
           />
+          <TagPreview value={tags}/>
           <Bio />
  
           <ul
@@ -98,6 +101,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }
