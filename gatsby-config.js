@@ -145,16 +145,5 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `fira-sans-extra-condensed`,
-            variants: [`400`, `500`, `600`, `700`, `800`]
-          },
-        ],
-      },
-    }
   ],
 }
