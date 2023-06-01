@@ -1,49 +1,54 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0643e551-0fef-4f57-9d3c-29d576f3e06c/deploy-status)](https://app.netlify.com/sites/gatsby-personal-starter-blog/deploys)
+# My Adventures in Web Design 
+A blog built using Gatsby
 
-<img alt="screenshot" src="./screenshot.gif">
 
-This is the search-enabled version of Gatsby Personal Starter Blog!
+## Table of Contents
 
-## 🚀 Quick start
+Introduction
 
-1.  **Create a Gatsby site.**
+Technologies Used
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+See the Live Site
 
-    ```sh
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/thomaswang/gatsby-personal-starter-blog
-    ```
+How to Get Started with Gatsby
 
-1.  **Start developing.**
+License
 
-    Navigate into your new site’s directory and start it up.
+Acknowledgements
 
-    ```sh
-    cd my-blog-starter/
-    gatsby develop
-    ```
+## Introduction
+Welcome to the repo for my blog about learning web design. It covers concepts starting with HTML, then adding CSS and JS tracing my journey learning and using those concepts to create websites and web applications. 
 
-1.  **Open the source code and start editing!**
+My blog was created using React and Gatsby, using the [Gatsby personal starter blog](https://github.com/thomaswangio/gatsby-personal-starter-blog). Then I customized the blog by adding functionality with features and then creating my own components.Then was connected to the Netlify CMS to manage content and deployed using Netlify with continuous development managed using a github repo.
 
-    Your site is now running at `http://localhost:8000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## Motivation
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+I created this project to learn different aspects of React and get more comfortable using React doing things such as making my own custom components and adding functionality. I also wanted to use a new framework, Gatsby, and another CMS, Netlify CMS.
 
-## 🎓 Learning Gatsby
+I also wanted to document my learning journey of web design. Starting with the basics of HTML and creating a markup file to how to use semantic HTML. Then incorporating CSS concepts and using JavaScript to make responsive dynamic web applications.  
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+## Built with
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+React
+JSX
+Gatsby
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+## See The Live Site
 
-## 📔 Learning Netlify CMS with Gatsby
+[Adventures in Web Design](https://design-web-blog.netlify.app/
+)
 
-Start from [this point](https://www.gatsbyjs.org/docs/sourcing-from-netlify-cms/#authenticating-with-github) in the Gatsby documentation to finish the set up for your personal Netlify CMS with authentication.
+## How to Get Started with Gatsby
 
-## 💫 Deploy
+Get started using Gatsby by installing the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/) and the [Netlify CLI](https://github.com/netlify/cli). Then start a directory with cd-my-gatsby-site or choose from their [library of starters](https://www.gatsbyjs.com/starters/). 
+Gatsby requires a minimal Node.js version 14.15.0
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thomaswangio/gatsby-personal-starter-blog)
+## Acknowledgements
+I found this project from [50 react projections link](https://github.com/colbyfayock/50-projects-for-react-and-the-static-web)
+I used a [blog starter](https://github.com/decaporg/gatsby-starter-decap-cms) repo from gatsby
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
